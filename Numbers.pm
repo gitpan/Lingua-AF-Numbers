@@ -1,10 +1,11 @@
 package Lingua::AF::Numbers;
 
-$VERSION = '1.0';
+$VERSION = '1.1';
 
 use strict;
 
 my $numbers = {
+	0	=>	'nul',
 	1	=>	'een',
 	2	=>	'twee',
 	3	=>	'drie',
@@ -147,16 +148,14 @@ sub _sortReturn
 		$large_nums = 1;
 	};
 
-	my $multiple = 0;
-
 	for( my $i = $size; $i > 0; $i-- ) {
-
 		if( defined($ret_array->[$i]) ) {
-			if( $multiple ) {
-				$ret .= ', ';
+			if( $ret_array->[$i] =~ /(miljoen|duisend)/ ) {
+				$ret .= $ret_array->[$i] .', ';
+			}
+			else {
+				$ret .= $ret_array->[$i] .' ';
 			};
-			$ret .= $ret_array->[$i];
-			$multiple = 1;
 		};
 	};
 
@@ -170,7 +169,7 @@ sub _sortReturn
 		$ret .= $ret_array->[0];
 	}
 	else {
-		$ret .= ', '. $ret_array->[0];
+		$ret .= ' '. $ret_array->[0];
 	};
 
 	$ret =~ s/(^ |\s{2,}| $)/ /g;
