@@ -7,3 +7,6 @@ Revision history for Perl module Lingua::AF::Numbers.
         - ability to handle large numbers
         - misc fixes to pod (Mike Castle)
 
+1.0     2002.07.29
+        - ability to handle numbers up to a tens of billions 
+
