@@ -1,6 +1,6 @@
 package Lingua::AF::Numbers;
 
-$VERSION = '0.1';
+$VERSION = '0.2';
 
 use strict;
 
@@ -115,7 +115,7 @@ sub _formatHundreds
 
 =head1 NAME
 
-Linuga::AF::Numbers - Perl module for converting numeric values into their Afrikaans equivalents
+Lingua::AF::Numbers - Perl module for converting numeric values into their Afrikaans equivalents
 
     
 =head1 DESCRIPTION
@@ -124,9 +124,9 @@ Initial release, documentation and updates will follow.
 
 =head1 SYNOPSIS
 
-  use Linuga::AF::Numbers;
+  use Lingua::AF::Numbers;
     
-  my $numbers = Linuga::AF::Numbers->new;
+  my $numbers = Lingua::AF::Numbers->new;
 
   my $text = $numbers->parse( 123 );
 
