@@ -4,3 +4,4 @@ MANIFEST
 Makefile.PL
 Numbers.pm
 t/01.t
+META.yml                                 Module meta-data (added by MakeMaker)

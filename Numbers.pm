@@ -1,6 +1,6 @@
 package Lingua::AF::Numbers;
 
-$VERSION = '1.1';
+$VERSION = '1.2';
 
 use strict;
 
@@ -247,7 +247,7 @@ None, but that does not mean there are not any.
 
 =head1 AUTHOR
 
-Alistair Francis, <cpan@alizta.com>
+Alistair Francis, http://search.cpan.org/~friffin/
 
 =cut
 
